@@ -568,47 +568,17 @@
   <section id="contact" data-animate="bounceIn" class="contact-section contact">
     <div class="container">
       <header class="text-center">
-        <h2 class="title">Contact me</h2>
+        <h2 class="title">Contacto</h2>
       </header>
 
-      <!-- <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <form id="contact-form">
-            <div class="messages"></div>
-            <div class="controls">
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="text" id="name" placeholder="Your firstname *" required="" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" id="surname" placeholder="Your lastname *" required="" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" id="email" placeholder="Your email *" required="" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" id="phone" placeholder="Your phone" class="form-control">
-                </div>
-                <div class="col-md-12">
-                  <textarea id="message" placeholder="Message for me *" rows="4" required=""
-                    class="form-control"></textarea>
-                </div>
-                <div class="col-md-12 text-center">
-                  <button id="sendMessage" class="btn btn-outline-primary">Send message</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div> -->
-
-
+      <!-- Formulario -->
       <form action="" class="formulario" id="contact-form">
         <!-- Grupo: Nombre -->
         <div class="formulario__grupo-1" id="grupo__nombre">
           <label for="nombre" class="formulario__label">Nombre</label>
           <div class="formulario__grupo-input">
-            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" class="formulario__input formulario__input-height" name="nombre" id="nombre"
+              placeholder="Nombre">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">El Nombre debe tener entre 2 y 40 caracteres y sólo puede contener letras y
@@ -619,75 +589,62 @@
         <div class="formulario__grupo-1" id="grupo__apellido">
           <label for="apellido" class="formulario__label">Apellido</label>
           <div class="formulario__grupo-input">
-            <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
+            <input type="text" class="formulario__input formulario__input-height" name="apellido" id="apellido"
+              placeholder="Apellido">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">El Apellido debe tener entre 2 y 40 caracteres y sólo puede contener letras
             y espacios.</p>
         </div>
 
-        <!-- Grupo: Contraseña -->
-        <!-- <div class="formulario__grupo" id="grupo__password">
-        <label for="password" class="formulario__label">Contraseña</label>
-        <div class="formulario__grupo-input">
-          <input type="password" class="formulario__input" name="password" id="password">
-          <i class="formulario__validacion-estado fas fa-times-circle"></i>
-        </div>
-        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
-      </div> -->
-
-        <!-- Grupo: Contraseña 2 -->
-        <!-- <div class="formulario__grupo" id="grupo__password2">
-        <label for="password2" class="formulario__label">Repetir Contraseña</label>
-        <div class="formulario__grupo-input">
-          <input type="password" class="formulario__input" name="password2" id="password2">
-          <i class="formulario__validacion-estado fas fa-times-circle"></i>
-        </div>
-        <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
-      </div> -->
-
         <!-- Grupo: Correo Electronico -->
         <div class="formulario__grupo-1" id="grupo__correo">
           <label for="correo" class="formulario__label">Correo Electrónico</label>
           <div class="formulario__grupo-input">
-            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+            <input type="email" class="formulario__input formulario__input-height" name="correo" id="correo"
+              placeholder="correo@correo.com">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion
-            bajo.
-          </p>
+          <p class="formulario__input-error">El correo solo puede contener letras, números, puntos y guiones.</p>
         </div>
 
         <!-- Grupo: Teléfono -->
         <div class="formulario__grupo-1" id="grupo__telefono">
           <label for="telefono" class="formulario__label">Teléfono</label>
           <div class="formulario__grupo-input">
-            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Teléfono">
+            <input type="text" class="formulario__input formulario__input-height" name="telefono" id="telefono"
+              placeholder="Teléfono">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <p class="formulario__input-error">El Teléfono debe tener entre 7 y 14 caracteres (sólo números).</p>
+          <p class="formulario__input-error">El Teléfono debe tener entre 8 y 14 caracteres (sólo números).</p>
         </div>
 
         <!-- Grupo: Mensaje -->
         <div class="formulario__grupo-2" id="grupo__mensaje">
           <label for="mensaje" class="formulario__label">Mensaje</label>
-          <div class="formulario__grupo-textarea">
-            <textarea name="mensaje" id="mensaje" placeholder="Message for me *" rows="4"
-              class="formulario__textarea"></textarea>
+          <div class="formulario__grupo-input">
+            <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje..." rows="4"
+              class="formulario__input"></textarea>
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
+          <p class="formulario__input-error">El Mensaje debe tener entre 20 y 200 caracteres.</p>
         </div>
 
-        <div class="formulario__mensaje" id="formulario__mensaje">
-          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.
+        <!-- <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, completa el formulario correctamente.
           </p>
+        </div> -->
+
+        <div class="formulario__grupo-2">
+          <p class="formulario__mensaje-error" id="formulario__mensaje-error"></p>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"></p>
         </div>
 
-        <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <div class="formulario__grupo-2 formulario__grupo-btn-enviar">
           <!-- <button type="submit" class="formulario__btn">Enviar</button> -->
           <button type="submit" class="btn btn-outline-primary">Enviar</button>
 
-          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Gracias por contactarme!</p>
+          <!-- <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Gracias por contactarme!</p> -->
         </div>
       </form>
     </div>
@@ -707,7 +664,7 @@
         </div>
         <!-- /.6-->
         <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
-          <p>© 2018 Your name goes here. All rights reserved.</p>
+          <p>© 2018 Alejandro Ciravegna. Todos los derechos reservados.</p>
         </div>
         <div class="col-12 mt-4">
           <p class="template-bootstrapious">Template by <a
