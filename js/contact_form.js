@@ -160,7 +160,7 @@ const sendEmail = () => {
     let resultado = false;
 
     $.ajax({
-        url: "https://formspreex.io/f/myybwrdk",
+        url: "https://formspree.io/f/myybwrdk",
         method: "POST",
         async: false,
         dataType: "json",
